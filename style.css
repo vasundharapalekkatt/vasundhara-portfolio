@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Michroma", sans-serif;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.listitems{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+
+}
+
+.links{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.links:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.home-content{
+    margin: 13px 0px 0px 8px;
+}
+
+#name{
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#lname{
+    font-family: "Dancing Script", cursive;
+    color: green;
+}
+
+#ptag{
+    line-height: 1.5px;
+}
+
+#linkbtn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.home-img{
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.gp1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+
+}
+
+.home-img:hover #logooo{
+    bottom: 70px;
+}
+
+.home-img:hover #girl{
+    left: 40%;
+}
+
+#about{
+    margin:30% 0px 0px 8%;
+    
+}
+
+.sectionhead{
+    text-align: center;
+
+}
+
+.mainhead{
+    font-size: 30px;
+    color: green;
+}
+
+.subhead{
+    font-size: 15px;
+    color: blue;
+}
+
+.aboutbody{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    }
+
+    .about-content{
+        font-size: 15px;
+        text-align: justify;
+        
+        
+    }  
+
+    .information{
+        margin-top: 1.3rem;
+    }
+
+    .infobox{
+        margin-bottom: 10px;
+    }
+
+    .infobox>span{
+        margin-left: 1rem;
+    }
+
+    #skill{
+        margin: 8% 0px 0px 8%;
+    }
+
+    .skill-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 2rem;
+        margin-top: 30px;
+    }
+
+    .Bars{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 1rem 0px;
+    }
+.barhead,.barperc{
+    font-weight: 50px;
+    font-size: 1.3rem;
+
+}
+.baseBar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    margin-top: 10px;
+}
+
+.portBar{
+    background-color: green;
+    width: 90%;
+}
+
+.landBar{
+     background-color: green;
+    width: 93%;
+}
+
+.editBar{
+     background-color: green;
+    width: 98%;
+}
+
+.wildBar{
+     background-color: green;
+    width: 94%;
+}
+
+.myskills{
+    width: 100%;
+}
+.contact{
+    margin: 8% 0px 0px 8%;
+}
+
+.iconCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+  /*  border: solid; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, rgb(24, 18, 46), rgb(68, 198, 77), rgb(7, 65, 9));
+}
+
+.icon:hover .brands{
+    color: white;
+
+    /*animation*/
+
+    animation: rotate 3s; /*rotate nammal itta peru aanu. */
+}
+
+@keyframes rotate{  /*s/m related aayi enthinelum access cheyyumbo keyframes kodukkum */
+0%{
+    transform: rotate(30deg);
+}
+
+20%{
+    transform: rotate(-30deg);
+}
+
+40%{
+    transform: rotate(30deg);
+}
+60%{
+    transform: rotate(-30deg);
+}
+80%{
+    transform: rotate(30deg);
+}
+100%{
+    transform: rotate(-30deg);
+}
+
+
+
+}
+footer{
+    margin-top: 5%; /*apo aa <p> thazhekk erangi varum*/
+}
+
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+
+.uparrow{
+    float: right; /*oru element ne ne left or right move cheyyan*/
+    margin: -40px 20px 20px 0px; /* -40 koduthath mukalilekk uparrow puvan aaanu*/
+}
+
+html{ /*uparrow koduthal scroll cheyth molil ponam. ath html nu mathre pattullu*/
+scroll-behavior: smooth;
+}
+
+/*scroll bar ne clr kodukkan root element nu pattullu. scroll bar has 2 part. 1. thumb and ath oodunna sthalam 2, track*/
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px; /*ipo onnum o/p kaanikkilla. thumb num track num style cheythale kaanikku*/
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: gray;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(71, 170, 21);
+    border-radius: 10px;
+}
+
+
+
